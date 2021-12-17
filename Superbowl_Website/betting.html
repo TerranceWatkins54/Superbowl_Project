@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="with=device-width, initial scale 1.0">
+    <title>Superbowl Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet'  href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="nfl-logo.png" alt="nfl logo"></a>
+        <div class="nav-links" id="navLinks">  
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="betting.html">BETTING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Betting</h1>
+    <P>These 2 games are generally the most popular game during the super bowl.</P>
+    </section>
+   <section class="Betting">
+       <div class="betting-row">
+           <div class="Betting-col">
+               <h3>Super Bowl Squares </h3>
+               <p>A standard Super Bowl square is a 10×10 grid. Each team playing in the game is assigned to the x and y axis. For this example, we'll use last year's teams: The Kansas City Chiefs and the San Francisco 49ers. Each corresponding column and row will later be assigned a numerical value of 1-9, selected randomly.</p>
+               <img src="superbowllvsquares.png" alt="Squares">
+           </div>
+           <div class="Betting-col">
+               <h3>Prop Pool</h3>
+               <p>You need to have a skill-based Super Bowl betting game where the person who gets the most questions right wins the pot. As a result, I like to assign the highest buy-in to this game, but know your audience.</p>
+               <img src="Happy_Man_Money.jpg" alt="money guy">
+           </div>
+       </div>
+   </section>
+        
+    <script>
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+    <section class="footer">
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"> <img style="border:none;width:88px;height:31px;text-decoration:none;" src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png" alt="Valid CSS"></a>
+                <a href="https://validator.w3.org/check?uri=referer"> <img style="border:none;height:31px;width:31px;text-decoration:none;" src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png" alt="Valid HTML"></a>
+        </p>
+        <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+            </section>
+</body>
+</html>
